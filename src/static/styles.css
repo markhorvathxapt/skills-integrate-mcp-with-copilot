@@ -28,6 +28,30 @@ header h1 {
   margin-bottom: 10px;
 }
 
+#auth-container {
+  margin-top: 15px;
+}
+
+#login-form,
+#logged-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#login-form input {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#auth-container button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +214,16 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  #login-form {
+    flex-wrap: wrap;
+  }
+
+  #login-form input {
+    width: 100%;
+  }
 }
 
 footer {
